@@ -18,7 +18,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
             .service(
-                web::scope("/api/v2")
+                web::scope("/api/v1")
                     .wrap(middleware::Compress::default())
                     .configure(weather_config)
                     .configure(projects_config)

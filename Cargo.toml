@@ -1,19 +1,19 @@
 [package]
 name = "portfolio-api"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
 actix-web = { version = "4", features = ["rustls-0_23"] }
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0"
-redis = { version = "0.27.2", features = ["async-std-comp"] }
+redis = { version = "0.28.2", features = ["async-std-comp"] }
 figment = { version = "0.10", features = ["toml"] }
 rustls = "0.23"
 lazy_static = "1.5.0"
 actix-files = "0.6.6"
 base64_light = "0.1.5"
-struson = { version = "0.5.0", features = ["experimental"] }
+struson = { version = "0.6.0", features = ["simple-api"] }
 reqwest = { version = "0.12.8", features = [
     "gzip",
     "brotli",
